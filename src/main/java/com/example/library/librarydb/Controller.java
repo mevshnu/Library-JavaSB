@@ -6,10 +6,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class Controller {
-    @PostMapping("/")
-    public String Home()
+    @PostMapping("/adminlogin")
+    public String adminlogin()
     {
-        return "home";
+        return "adminlogin";
     }
     @GetMapping("/view")
     public String View()
@@ -28,4 +28,24 @@ public class Controller {
     }
     @PostMapping("/delete")
     public String Delete() {return "Delete";}
+    @PostMapping("/userlogin")
+    public String userlogin()
+    {
+        return "userlogin";
+    }
+    @PostMapping("/issue")
+    public String issue()
+    {
+        return "issue";
+    }
+    @PostMapping("/usersignup")
+    public String usersignup()
+    {
+        return "usersignup";
+    }
+    @PostMapping("/entry")
+    public String entry()
+    {
+        return "entry";
+    }
 }
